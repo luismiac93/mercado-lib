@@ -19,6 +19,10 @@ The server
 
 `npm install`
 
+- add file .env and environment variable
+
+`PORT=4000`
+
 This is the node Server app to start :
 
 `node server.js`
@@ -28,6 +32,10 @@ Then run the client app
 `cd /mercado-lib-frontend`
 
 `npm install`
+
+- validate that the port of the baseUrl constant in the `src/helper/fetch.js` is the one configured on the backend
+
+`default is 4001 or .env file environment PORT`
 
 That is the client React Application to start :
 
