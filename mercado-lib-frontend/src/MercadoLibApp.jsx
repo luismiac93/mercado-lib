@@ -1,6 +1,11 @@
 import React from "react";
-import { Home } from "./pages/Home";
+import { ItemProvider } from "./context/ItemContext";
+import { AppRouter } from "./routes/AppRouter";
 
 export const MercadoLibApp = () => {
-  return <Home />;
+  return (
+    <ItemProvider>
+      <AppRouter />
+    </ItemProvider>
+  );
 };

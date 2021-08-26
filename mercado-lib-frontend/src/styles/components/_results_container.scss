@@ -1,0 +1,29 @@
+.results__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results__items {
+  background-color: white;
+  width: 800px;
+  margin: $sixteen;
+  border-radius: 4px;
+}
+
+.breadcrumb__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $sixteen;
+}
+
+.breadcrumb__content {
+  width: 800px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: $grey;
+  font-weight: 500;
+}

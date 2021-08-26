@@ -1,10 +1,9 @@
 import React from "react";
-import { SearchBox } from "../components/SearchBox";
 
 export const Home = () => {
   return (
     <>
-      <SearchBox />
+      {/* {appState.searchList.length > 0 ? <ResultsContainer /> : <h1>hello</h1>} */}
     </>
   );
 };

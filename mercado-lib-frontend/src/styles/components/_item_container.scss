@@ -1,0 +1,20 @@
+.item__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item__detail {
+  background-color: white;
+  width: 800px;
+  margin: $sixteen;
+  border-radius: 4px;
+}
+
+.not-content {
+  margin: $thirty-two;
+}
+
+.not-content p{
+    color: $dark-grey;
+}

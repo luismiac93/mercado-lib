@@ -1,0 +1,55 @@
+.result__content {
+  padding: $sixteen;
+  display: flex;
+  flex-direction: row;
+}
+
+.result__content h4 {
+  font-weight: 500;
+  margin-bottom: $thirty-two;
+}
+
+.result__img__container {
+  margin-right: $sixteen;
+  border-radius: 4px;
+}
+
+.result__img {
+}
+
+.content__info__price {
+  margin-top: $sixteen;
+}
+
+.content__price {
+  display: flex;
+}
+
+.price__icon {
+  margin-left: 10px;
+}
+
+.content__title {
+  color: $dark-grey;
+}
+
+.content__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__city {
+  text-align: left;
+  width: 150px;
+  font-size: 12px;
+  color: $grey;
+  font-weight: 700;
+  margin-top: $thirty-two;
+}
+
+.result__separator {
+  width: 93%;
+  border-bottom: 1px solid $light-grey;
+  margin-left: $thirty-two;
+}
