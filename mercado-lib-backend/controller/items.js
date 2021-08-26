@@ -7,6 +7,7 @@ const baseUrl = "https://api.mercadolibre.com/items";
 
 const author = { name: "Luis", lastname: "Aza" };
 
+//busqueda general
 const searchAll = async (req, res) => {
   const query = req.query.q;
 
@@ -26,6 +27,7 @@ const searchAll = async (req, res) => {
   }
 };
 
+//busqueda por id
 const itemById = async (req, res) => {
   const id = req.params.id;
 
@@ -45,6 +47,7 @@ const itemById = async (req, res) => {
   }
 };
 
+//busqueda por id y descripción 
 const itemByIdDescription = async (req, res) => {
   const id = req.params.id;
 
@@ -66,6 +69,7 @@ const itemByIdDescription = async (req, res) => {
   }
 };
 
+//solicitud no encontrada
 const notFound = (res) => {
   errorMessage(res);
 };

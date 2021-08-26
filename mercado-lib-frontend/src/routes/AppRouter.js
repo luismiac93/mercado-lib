@@ -6,6 +6,7 @@ import { ResultsContainer } from "../components/ResultsContainer";
 import { SearchBox } from "../components/SearchBox";
 import { Home } from "../pages/Home";
 
+//rutas de nuestra aplicacion { /items : busqueda por query params }, { /items/id busqueda por param }, { / inicio de nuestra app }
 export const AppRouter = () => {
   return (
     <Router>

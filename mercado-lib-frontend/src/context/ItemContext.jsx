@@ -3,16 +3,19 @@ import { fetchApi } from "../helpers/fetch";
 
 export const ItemContext = createContext();
 
+//estado inicial para la aplicación
 const initialState = {
   searchList: [],
   categories: [],
   selectItem: null,
 };
 
+//proveedor de estado de la aplicaion
 export const ItemProvider = ({ children }) => {
   const [appState, setAppState] = useState(initialState);
   const [isLoading, setIsLoading] = useState(false);
 
+  //buscar por el query 
   const findByQuery = async (query) => {
     try {
       const items = await fetchApi(`/items?q=${query}`);
@@ -28,6 +31,7 @@ export const ItemProvider = ({ children }) => {
     }
   };
 
+  //buscar por el id
   const findById = async (id) => {
     setIsLoading(true);
     if (!id) {

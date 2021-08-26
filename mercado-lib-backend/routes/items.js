@@ -5,8 +5,10 @@ const {
   itemByIdDescription,
   notFound,
 } = require("../controller/items");
+
 const router = express.Router();
 
+//rutas de nuestra Api
 router.get("/", searchAll);
 router.get("/:id", itemById);
 router.get("/:id/description", itemByIdDescription);

@@ -1,3 +1,4 @@
+//mapeo de la informacion general
 const searchDataMapper = (data) => {
   const items = [];
   const categories =
@@ -22,6 +23,7 @@ const searchDataMapper = (data) => {
   return { categories, items };
 };
 
+//mapeo de la informacion del producto
 const itemDataMapper = (data) => {
   const item = {
     id: data.id,

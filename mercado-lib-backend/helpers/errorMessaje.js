@@ -1,3 +1,4 @@
+//control de errores
 const errorMessage = (res) => {
   return res.status(404).json({
     ok: false,
